@@ -7,6 +7,8 @@ public interface PersistenceStrategy
 {
 	public AlgorithmDAO getAlgorithmDAO();
 
+	public AuthorAliasDAO getAuthorAliasDAO();
+
 	public AuthorDAO getAuthorDAO();
 
 	public InstitutionDAO getInstitutionDAO();
@@ -16,6 +18,8 @@ public interface PersistenceStrategy
 	public LocationDAO getLocationDAO();
 
 	public PublicationDAO getPublicationDAO();
+
+	public PublicationOldDAO getPublicationOldDAO();
 
 	public RoleDAO getRoleDAO();
 
