@@ -39,4 +39,6 @@ public interface PersistenceStrategy
 	public UserDAO getUserDAO();
 
 	public VenueDAO getVenueDAO();
+
+	public WidgetDAO getWidgetDAO();
 }
