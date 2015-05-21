@@ -30,6 +30,8 @@ public interface PersistenceStrategy
 
 	public RunTimeDAO getRunTimeDAO();
 
+	public SessionDataSetDAO getSessionDataSetDAO();
+
 	public SourceDAO getSourceDAO();
 
 	public TagDAO getTagDAO();
