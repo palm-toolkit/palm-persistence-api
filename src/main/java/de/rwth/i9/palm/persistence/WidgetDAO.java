@@ -3,6 +3,7 @@ package de.rwth.i9.palm.persistence;
 import java.util.List;
 
 import de.rwth.i9.palm.model.Widget;
+import de.rwth.i9.palm.model.WidgetStatus;
 import de.rwth.i9.palm.model.WidgetType;
 
 public interface WidgetDAO extends GenericDAO<Widget>, InstantiableDAO
@@ -22,4 +23,25 @@ public interface WidgetDAO extends GenericDAO<Widget>, InstantiableDAO
 	 * @return
 	 */
 	List<Widget> getActiveWidgetByWidgetTypeAndGroup( WidgetType widgetType, String widgetGroup );
+
+	/**
+	 * Get list of specific widgets by their type and status (DEFAULT, ACTIVE,
+	 * etc)
+	 * 
+	 * @param widgetType
+	 * @param widgetStatuses
+	 * @return
+	 */
+	List<Widget> getWidget( WidgetType widgetType, WidgetStatus... widgetStatuses );
+
+	/**
+	 * Get list of specific widgets by their type, group and status (DEFAULT,
+	 * ACTIVE, etc)
+	 * 
+	 * @param widgetType
+	 * @param widgetGroup
+	 * @param widgetStatuses
+	 * @return
+	 */
+	List<Widget> getWidget( WidgetType widgetType, String widgetGroup, WidgetStatus... widgetStatuses );
 }
