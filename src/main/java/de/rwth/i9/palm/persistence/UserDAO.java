@@ -18,4 +18,9 @@ public interface UserDAO extends GenericDAO<User>, InstantiableDAO
 	 * @return
 	 */
 	public User getByUsername( final String username );
+
+	/**
+	 * @param user
+	 */
+	public User touch( final User user );
 }
