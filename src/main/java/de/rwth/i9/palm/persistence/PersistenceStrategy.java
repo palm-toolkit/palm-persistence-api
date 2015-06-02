@@ -40,7 +40,7 @@ public interface PersistenceStrategy
 
 	public UserDAO getUserDAO();
 
-	public VenueDAO getVenueDAO();
+	public ConferenceDAO getVenueDAO();
 
 	public WidgetDAO getWidgetDAO();
 }
