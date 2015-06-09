@@ -5,4 +5,6 @@ import de.rwth.i9.palm.model.Location;
 public interface LocationDAO extends GenericDAO<Location>, InstantiableDAO
 {
 
+	Location getByCountry( String countryName );
+
 }
