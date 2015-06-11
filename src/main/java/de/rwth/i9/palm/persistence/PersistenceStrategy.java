@@ -6,19 +6,20 @@ package de.rwth.i9.palm.persistence;
  */
 public interface PersistenceStrategy
 {
-	public AlgorithmDAO getAlgorithmDAO();
 
 	public AuthorAliasDAO getAuthorAliasDAO();
 
 	public AuthorDAO getAuthorDAO();
 
+	public ConferenceDAO getConferenceDAO();
+
 	public DatasetDAO getDatasetDAO();
+
+	public ExtractionServiceDAO getExtractionServiceDAO();
 
 	public FunctionDAO getFunctionDAO();
 
 	public InstitutionDAO getInstitutionDAO();
-
-	public SubjectDAO getSubjectDAO();
 
 	public LocationDAO getLocationDAO();
 
@@ -28,17 +29,17 @@ public interface PersistenceStrategy
 
 	public RoleDAO getRoleDAO();
 
-	public RunTimeDAO getRunTimeDAO();
+	public ExtractionRuntimeDAO getExtractionRuntimeDAO();
 
 	public SessionDataSetDAO getSessionDataSetDAO();
 
 	public SourceDAO getSourceDAO();
 
-	public TopicDAO getTopicDAO();
+	public SubjectDAO getSubjectDAO();
+
+	public PublicationTopicDAO getPublicationTopicDAO();
 
 	public UserDAO getUserDAO();
-
-	public ConferenceDAO getConferenceDAO();
 
 	public WidgetDAO getWidgetDAO();
 }
