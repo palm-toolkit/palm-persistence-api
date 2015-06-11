@@ -5,6 +5,6 @@ import de.rwth.i9.palm.model.Reference;
 public interface ReferenceDAO extends GenericDAO<Reference>, InstantiableDAO
 {
 
-	Reference getByUri( String uri );
+	public Reference getByUri( String uri );
 
 }

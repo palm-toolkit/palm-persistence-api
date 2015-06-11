@@ -25,6 +25,12 @@ public interface PersistenceStrategy
 
 	public PublicationDAO getPublicationDAO();
 
+	public PublicationHistoryDAO getPublicationHistoryDAO();
+
+	public PublicationSourceDAO getPublicationSourceDAO();
+
+	public PublicationTopicDAO getPublicationTopicDAO();
+
 	public ReferenceDAO getReferenceDAO();
 
 	public RoleDAO getRoleDAO();
@@ -36,8 +42,6 @@ public interface PersistenceStrategy
 	public SourceDAO getSourceDAO();
 
 	public SubjectDAO getSubjectDAO();
-
-	public PublicationTopicDAO getPublicationTopicDAO();
 
 	public UserDAO getUserDAO();
 
