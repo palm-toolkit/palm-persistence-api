@@ -18,13 +18,13 @@ public interface PersistenceStrategy
 
 	public InstitutionDAO getInstitutionDAO();
 
-	public KeywordDAO getKeywordDAO();
+	public SubjectDAO getSubjectDAO();
 
 	public LocationDAO getLocationDAO();
 
 	public PublicationDAO getPublicationDAO();
 
-	public PublicationOldDAO getPublicationOldDAO();
+	public ReferenceDAO getReferenceDAO();
 
 	public RoleDAO getRoleDAO();
 
@@ -33,8 +33,6 @@ public interface PersistenceStrategy
 	public SessionDataSetDAO getSessionDataSetDAO();
 
 	public SourceDAO getSourceDAO();
-
-	public TagDAO getTagDAO();
 
 	public TopicDAO getTopicDAO();
 
