@@ -39,5 +39,5 @@ public interface PublicationDAO extends GenericDAO<Publication>, InstantiableDAO
 	 * 	Map< "count", Int numberOfMatchingPublication > -  the total number of matching publications <br/>
 	 *  Map< "result", List<Publication> > -  the publication list
 	 */
-	public Map<String, Object> getPublicationByFUllTextSearchWithPaging( String queryString, int pageNo, int maxResult);
+	public Map<String, Object> getPublicationByFullTextSearchWithPaging( String query, int page, int maxResult );
 }
