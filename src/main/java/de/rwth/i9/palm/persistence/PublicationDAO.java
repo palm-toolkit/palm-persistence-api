@@ -29,7 +29,7 @@ public interface PublicationDAO extends GenericDAO<Publication>, InstantiableDAO
 	 * @param queryString
 	 * @return list of all related publication
 	 */
-	public List<Publication> getPublicationByFUllTextSearch( String queryString );
+	public List<Publication> getPublicationByFullTextSearch( String queryString );
 	
 	/**
 	 * Apply fulltext searh with hibernate search with pagging
