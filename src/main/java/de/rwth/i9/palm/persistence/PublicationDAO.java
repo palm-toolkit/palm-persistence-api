@@ -24,7 +24,7 @@ public interface PublicationDAO extends GenericDAO<Publication>, InstantiableDAO
 	public Map<String, Object> getPublicationWithPaging( int pageNo, int maxResult );
 
 	/**
-	 * Apply fulltext searh with hibernate search
+	 * Apply fulltext search with Hibernate search
 	 * 
 	 * @param queryString
 	 * @return list of all related publication
@@ -32,12 +32,13 @@ public interface PublicationDAO extends GenericDAO<Publication>, InstantiableDAO
 	public List<Publication> getPublicationByFullTextSearch( String queryString );
 	
 	/**
-	 * Apply fulltext searh with hibernate search with pagging
+	 * Apply fulltext search with Hibernate search with paging
 	 * 
 	 * @param queryString
 	 * @return Map<String, Object><br/>
-	 * 	Map< "count", Int numberOfMatchingPublication > -  the total number of matching publications <br/>
-	 *  Map< "result", List<Publication> > -  the publication list
+	 *         Map< "count", Int numberOfMatchingPublication > - the total
+	 *         number of matching publications <br/>
+	 *         Map< "result", List<Publication> > - the publication list
 	 */
 	public Map<String, Object> getPublicationByFullTextSearchWithPaging( String query, int page, int maxResult );
 }
