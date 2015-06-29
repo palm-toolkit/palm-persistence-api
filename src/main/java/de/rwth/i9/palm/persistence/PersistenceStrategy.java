@@ -11,6 +11,8 @@ public interface PersistenceStrategy
 
 	public AuthorDAO getAuthorDAO();
 
+	public AuthorSourceDAO getAuthorSourceDAO();
+
 	public ConferenceDAO getConferenceDAO();
 
 	public DatasetDAO getDatasetDAO();

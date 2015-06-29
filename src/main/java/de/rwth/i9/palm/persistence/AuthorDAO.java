@@ -48,7 +48,7 @@ public interface AuthorDAO extends GenericDAO<Author>, InstantiableDAO
 	 * @param maxResult
 	 * @return
 	 */
-	public Map<String, Object> getAuthorWithPaging( int pageNo, int maxResult );
+	public Map<String, Object> getAuthorWithPaging( String queryString, int pageNo, int maxResult );
 
 	/**
 	 * Apply fulltext search with hibernate search
@@ -68,4 +68,6 @@ public interface AuthorDAO extends GenericDAO<Author>, InstantiableDAO
 	 *         Map< "result", List<Author> > - the author list
 	 */
 	public Map<String, Object> getAuthorByFullTextSearchWithPaging( String query, int page, int maxResult );
+
+	public List<Author> getAuthorByNameAndInstitution( String name, String institution );
 }

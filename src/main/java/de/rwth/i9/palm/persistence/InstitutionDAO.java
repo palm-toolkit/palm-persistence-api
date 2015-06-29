@@ -7,4 +7,5 @@ public interface InstitutionDAO extends GenericDAO<Institution>, InstantiableDAO
 
 	Institution getByUri( String institutionUrl );
 
+	Institution getByName( String name );
 }
