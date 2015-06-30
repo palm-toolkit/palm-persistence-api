@@ -6,9 +6,6 @@ package de.rwth.i9.palm.persistence;
  */
 public interface PersistenceStrategy
 {
-
-	public AuthorAliasDAO getAuthorAliasDAO();
-
 	public AuthorDAO getAuthorDAO();
 
 	public AuthorSourceDAO getAuthorSourceDAO();
