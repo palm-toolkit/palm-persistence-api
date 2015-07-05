@@ -51,4 +51,6 @@ public interface PublicationDAO extends GenericDAO<Publication>, InstantiableDAO
 	 * @return
 	 */
 	public Map<String, Object> getPublicationByConferenceWithPaging( Conference conference, int pageNo, int maxResult );
+	
+	public List<Publication> getPublicationViaFuzzyQuery(String queryString, float threshold, int prefixLength);
 }
