@@ -12,6 +12,8 @@ public interface PersistenceStrategy
 
 	public ConferenceDAO getConferenceDAO();
 
+	public ConferenceGroupDAO getConferenceGroupDAO();
+
 	public DatasetDAO getDatasetDAO();
 
 	public ExtractionServiceDAO getExtractionServiceDAO();

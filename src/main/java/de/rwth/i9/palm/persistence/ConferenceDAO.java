@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 import de.rwth.i9.palm.model.Conference;
+import de.rwth.i9.palm.model.ConferenceGroup;
 
 public interface ConferenceDAO extends GenericDAO<Conference>, InstantiableDAO
 {
@@ -49,4 +50,6 @@ public interface ConferenceDAO extends GenericDAO<Conference>, InstantiableDAO
 	 *         Map< "result", List<Conference> > - the conference list
 	 */
 	public Map<String, Object> getConferenceByFullTextSearchWithPaging( String query, int page, int maxResult );
+
+	public List<ConferenceGroup> getConferenceViaFuzzyQuery( String name, float threshold, int prefixLength );
 }
