@@ -7,16 +7,6 @@ import de.rwth.i9.palm.model.Author;
 
 public interface AuthorDAO extends GenericDAO<Author>, InstantiableDAO
 {
-	/**
-	 * Get first author in the list based on its last name this method is
-	 * <b>Deprecated</b>, since there are possibilities other authors with same
-	 * last name;
-	 * 
-	 * @param lastName
-	 * @return
-	 */
-	@Deprecated
-	public Author getByLastName( String lastName );
 
 	/**
 	 * Get list of authors with similar last name
@@ -24,7 +14,15 @@ public interface AuthorDAO extends GenericDAO<Author>, InstantiableDAO
 	 * @param lastName
 	 * @return
 	 */
-	public List<Author> getAuthorByLastName( String lastName );
+	public List<Author> getByLastName( String lastName );
+
+	/**
+	 * Get list of authors with similar last name
+	 * 
+	 * @param lastName
+	 * @return
+	 */
+	public List<Author> getByName( String name );
 
 	/**
 	 * Get author by its unique uri
