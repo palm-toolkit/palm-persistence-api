@@ -49,4 +49,6 @@ public interface GenericDAO<T>
 	
 	void insert( T entity );
 
+	int countTotal();
+
 }

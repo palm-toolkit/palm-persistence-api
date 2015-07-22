@@ -5,4 +5,7 @@ import de.rwth.i9.palm.model.Institution;
 public interface InstitutionDAO extends GenericDAO<Institution>, InstantiableDAO
 {
 
+	Institution getByUri( String institutionUrl );
+
+	Institution getByName( String name );
 }

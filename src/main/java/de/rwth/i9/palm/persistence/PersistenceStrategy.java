@@ -6,37 +6,49 @@ package de.rwth.i9.palm.persistence;
  */
 public interface PersistenceStrategy
 {
-	public AlgorithmDAO getAlgorithmDAO();
-
-	public AuthorAliasDAO getAuthorAliasDAO();
-
 	public AuthorDAO getAuthorDAO();
 
+	public AuthorSourceDAO getAuthorSourceDAO();
+
+	public ConferenceDAO getConferenceDAO();
+
+	public ConferenceGroupDAO getConferenceGroupDAO();
+
 	public DatasetDAO getDatasetDAO();
+
+	public ExtractionServiceDAO getExtractionServiceDAO();
 
 	public FunctionDAO getFunctionDAO();
 
 	public InstitutionDAO getInstitutionDAO();
 
-	public KeywordDAO getKeywordDAO();
-
 	public LocationDAO getLocationDAO();
+
+	public PalmConfigurationDAO getPalmConfigurationDAO();
 
 	public PublicationDAO getPublicationDAO();
 
-	public PublicationOldDAO getPublicationOldDAO();
+	public PublicationHistoryDAO getPublicationHistoryDAO();
+
+	public PublicationSourceDAO getPublicationSourceDAO();
+
+	public PublicationTopicDAO getPublicationTopicDAO();
+
+	public ReferenceDAO getReferenceDAO();
 
 	public RoleDAO getRoleDAO();
 
-	public RunTimeDAO getRunTimeDAO();
+	public ExtractionRuntimeDAO getExtractionRuntimeDAO();
+
+	public SessionDataSetDAO getSessionDataSetDAO();
 
 	public SourceDAO getSourceDAO();
 
-	public TagDAO getTagDAO();
-
-	public TopicDAO getTopicDAO();
+	public SubjectDAO getSubjectDAO();
 
 	public UserDAO getUserDAO();
 
-	public VenueDAO getVenueDAO();
+	public UserRequestDAO getUserRequestDAO();
+
+	public WidgetDAO getWidgetDAO();
 }
