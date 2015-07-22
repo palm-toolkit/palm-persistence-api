@@ -24,6 +24,8 @@ public interface PersistenceStrategy
 
 	public LocationDAO getLocationDAO();
 
+	public PalmConfigurationDAO getPalmConfigurationDAO();
+
 	public PublicationDAO getPublicationDAO();
 
 	public PublicationHistoryDAO getPublicationHistoryDAO();
