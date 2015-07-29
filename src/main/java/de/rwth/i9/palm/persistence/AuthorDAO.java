@@ -60,9 +60,9 @@ public interface AuthorDAO extends GenericDAO<Author>, InstantiableDAO
 	 * Apply fulltext search with hibernate search with paging
 	 * 
 	 * @param queryString
-	 * @return Map<String, Object><br/>
+	 * @return Map<String, Object>
 	 *         Map< "count", Int numberOfMatchingAuthor > - the total number of
-	 *         matching authors <br/>
+	 *         matching authors 
 	 *         Map< "result", List<Author> > - the author list
 	 */
 	public Map<String, Object> getAuthorByFullTextSearchWithPaging( String query, int page, int maxResult );

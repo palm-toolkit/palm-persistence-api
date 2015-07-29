@@ -44,9 +44,9 @@ public interface ConferenceDAO extends GenericDAO<Conference>, InstantiableDAO
 	 * Apply fulltext search with Hibernate search with paging
 	 * 
 	 * @param queryString
-	 * @return Map<String, Object><br/>
+	 * @return Map<String, Object>
 	 *         Map< "count", Int numberOfMatchingConference > - the total number
-	 *         of matching conferences <br/>
+	 *         of matching conferences 
 	 *         Map< "result", List<Conference> > - the conference list
 	 */
 	public Map<String, Object> getConferenceByFullTextSearchWithPaging( String query, int page, int maxResult );

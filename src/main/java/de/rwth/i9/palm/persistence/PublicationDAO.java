@@ -36,9 +36,9 @@ public interface PublicationDAO extends GenericDAO<Publication>, InstantiableDAO
 	 * Apply fulltext search with Hibernate search with paging
 	 * 
 	 * @param queryString
-	 * @return Map<String, Object><br/>
+	 * @return Map<String, Object>
 	 *         Map< "count", Int numberOfMatchingPublication > - the total
-	 *         number of matching publications <br/>
+	 *         number of matching publications 
 	 *         Map< "result", List<Publication> > - the publication list
 	 */
 	public Map<String, Object> getPublicationByFullTextSearchWithPaging( String query, int page, int maxResult );
