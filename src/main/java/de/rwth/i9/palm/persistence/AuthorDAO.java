@@ -70,4 +70,6 @@ public interface AuthorDAO extends GenericDAO<Author>, InstantiableDAO
 	public List<Author> getAuthorByNameAndInstitution( String name, String institution );
 
 	public List<Author> getAuthorViaFuzzyQuery( String name, float threshold, int prefixLength );
+
+	public List<Author> getAuthorWithLikeQuery( String name );
 }
