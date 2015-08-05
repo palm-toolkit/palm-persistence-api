@@ -38,8 +38,6 @@ public interface PersistenceStrategy
 
 	public RoleDAO getRoleDAO();
 
-	public ExtractionRuntimeDAO getExtractionRuntimeDAO();
-
 	public SessionDataSetDAO getSessionDataSetDAO();
 
 	public SourceDAO getSourceDAO();
