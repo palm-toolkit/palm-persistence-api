@@ -22,6 +22,8 @@ public interface PersistenceStrategy
 
 	public InstitutionDAO getInstitutionDAO();
 
+	public InterestDAO getInterestDAO();
+
 	public LocationDAO getLocationDAO();
 
 	public PalmConfigurationDAO getPalmConfigurationDAO();
