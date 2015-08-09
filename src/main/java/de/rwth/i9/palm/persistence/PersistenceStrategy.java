@@ -8,6 +8,10 @@ public interface PersistenceStrategy
 {
 	public AuthorDAO getAuthorDAO();
 
+	public AuthorInterestDAO getAuthorInterestDAO();
+
+	public AuthorInterestProfileDAO getAuthorInterestProfileDAO();
+
 	public AuthorSourceDAO getAuthorSourceDAO();
 
 	public ConferenceDAO getConferenceDAO();
