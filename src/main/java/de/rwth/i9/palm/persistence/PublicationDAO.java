@@ -3,7 +3,7 @@ package de.rwth.i9.palm.persistence;
 import java.util.List;
 import java.util.Map;
 
-import de.rwth.i9.palm.model.Conference;
+import de.rwth.i9.palm.model.Event;
 import de.rwth.i9.palm.model.Publication;
 
 public interface PublicationDAO extends GenericDAO<Publication>, InstantiableDAO
@@ -44,13 +44,13 @@ public interface PublicationDAO extends GenericDAO<Publication>, InstantiableDAO
 	public Map<String, Object> getPublicationByFullTextSearchWithPaging( String query, int page, int maxResult );
 
 	/**
-	 * Get all publication in pagination based on conference
+	 * Get all publication in pagination based on event
 	 * 
 	 * @param pageNo
 	 * @param maxResult
 	 * @return
 	 */
-	public Map<String, Object> getPublicationByConferenceWithPaging( Conference conference, int pageNo, int maxResult );
+	public Map<String, Object> getPublicationByEventWithPaging( Event event, int pageNo, int maxResult );
 	
 	public List<Publication> getPublicationViaPhraseSlopQuery( String publicationTitle, int slope );
 }
