@@ -8,11 +8,15 @@ public interface PersistenceStrategy
 {
 	public AuthorDAO getAuthorDAO();
 
+	public AuthorInterestDAO getAuthorInterestDAO();
+
+	public AuthorInterestProfileDAO getAuthorInterestProfileDAO();
+
 	public AuthorSourceDAO getAuthorSourceDAO();
 
-	public ConferenceDAO getConferenceDAO();
+	public EventDAO getEventDAO();
 
-	public ConferenceGroupDAO getConferenceGroupDAO();
+	public EventGroupDAO getEventGroupDAO();
 
 	public DatasetDAO getDatasetDAO();
 
@@ -21,6 +25,8 @@ public interface PersistenceStrategy
 	public FunctionDAO getFunctionDAO();
 
 	public InstitutionDAO getInstitutionDAO();
+
+	public InterestDAO getInterestDAO();
 
 	public LocationDAO getLocationDAO();
 
@@ -37,8 +43,6 @@ public interface PersistenceStrategy
 	public ReferenceDAO getReferenceDAO();
 
 	public RoleDAO getRoleDAO();
-
-	public ExtractionRuntimeDAO getExtractionRuntimeDAO();
 
 	public SessionDataSetDAO getSessionDataSetDAO();
 
