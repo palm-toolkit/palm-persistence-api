@@ -34,6 +34,8 @@ public interface PersistenceStrategy
 
 	public PublicationDAO getPublicationDAO();
 
+	public PublicationFileDAO getPublicationFileDAO();
+
 	public PublicationHistoryDAO getPublicationHistoryDAO();
 
 	public PublicationSourceDAO getPublicationSourceDAO();
