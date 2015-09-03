@@ -50,6 +50,8 @@ public interface PersistenceStrategy
 
 	public SourceDAO getSourceDAO();
 
+	public SourcePropertyDAO getSourcePropertyDAO();
+
 	public SubjectDAO getSubjectDAO();
 
 	public UserDAO getUserDAO();
