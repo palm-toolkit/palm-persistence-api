@@ -8,4 +8,6 @@ import de.rwth.i9.palm.model.SourceType;
 public interface SourceDAO extends GenericDAO<Source>, InstantiableDAO
 {
 	public Map<SourceType, Boolean> getActiveSourceMap();
+
+	public Map<String, Source> getSourceMap();
 }
