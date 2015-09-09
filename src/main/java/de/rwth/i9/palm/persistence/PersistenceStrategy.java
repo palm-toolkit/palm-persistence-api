@@ -28,6 +28,10 @@ public interface PersistenceStrategy
 
 	public InterestDAO getInterestDAO();
 
+	public InterestProfileDAO getInterestProfileDAO();
+
+	public InterestProfilePropertyDAO getInterestProfilePropertyDAO();
+
 	public LocationDAO getLocationDAO();
 
 	public PalmConfigurationDAO getPalmConfigurationDAO();
