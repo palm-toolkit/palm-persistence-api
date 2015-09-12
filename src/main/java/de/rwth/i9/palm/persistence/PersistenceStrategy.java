@@ -22,6 +22,8 @@ public interface PersistenceStrategy
 
 	public ExtractionServiceDAO getExtractionServiceDAO();
 
+	public ExtractionServicePropertyDAO getExtractionServicePropertyDAO();
+
 	public FunctionDAO getFunctionDAO();
 
 	public InstitutionDAO getInstitutionDAO();
