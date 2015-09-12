@@ -7,7 +7,7 @@ import de.rwth.i9.palm.model.ExtractionService;
 
 public interface ExtractionServiceDAO extends GenericDAO<ExtractionService>, InstantiableDAO
 {
-	public List<ExtractionService> getAllExtractionProfile();
+	public List<ExtractionService> getAllExtractionServices();
 
 	public List<ExtractionService> getAllActiveExtractionService();
 
