@@ -22,11 +22,17 @@ public interface PersistenceStrategy
 
 	public ExtractionServiceDAO getExtractionServiceDAO();
 
+	public ExtractionServicePropertyDAO getExtractionServicePropertyDAO();
+
 	public FunctionDAO getFunctionDAO();
 
 	public InstitutionDAO getInstitutionDAO();
 
 	public InterestDAO getInterestDAO();
+
+	public InterestProfileDAO getInterestProfileDAO();
+
+	public InterestProfilePropertyDAO getInterestProfilePropertyDAO();
 
 	public LocationDAO getLocationDAO();
 
