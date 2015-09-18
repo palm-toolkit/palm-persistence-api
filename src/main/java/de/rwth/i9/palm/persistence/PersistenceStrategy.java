@@ -22,17 +22,25 @@ public interface PersistenceStrategy
 
 	public ExtractionServiceDAO getExtractionServiceDAO();
 
+	public ExtractionServicePropertyDAO getExtractionServicePropertyDAO();
+
 	public FunctionDAO getFunctionDAO();
 
 	public InstitutionDAO getInstitutionDAO();
 
 	public InterestDAO getInterestDAO();
 
+	public InterestProfileDAO getInterestProfileDAO();
+
+	public InterestProfilePropertyDAO getInterestProfilePropertyDAO();
+
 	public LocationDAO getLocationDAO();
 
 	public PalmConfigurationDAO getPalmConfigurationDAO();
 
 	public PublicationDAO getPublicationDAO();
+
+	public PublicationFileDAO getPublicationFileDAO();
 
 	public PublicationHistoryDAO getPublicationHistoryDAO();
 
@@ -47,6 +55,8 @@ public interface PersistenceStrategy
 	public SessionDataSetDAO getSessionDataSetDAO();
 
 	public SourceDAO getSourceDAO();
+
+	public SourcePropertyDAO getSourcePropertyDAO();
 
 	public SubjectDAO getSubjectDAO();
 

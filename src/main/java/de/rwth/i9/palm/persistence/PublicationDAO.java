@@ -3,6 +3,7 @@ package de.rwth.i9.palm.persistence;
 import java.util.List;
 import java.util.Map;
 
+import de.rwth.i9.palm.model.Author;
 import de.rwth.i9.palm.model.Event;
 import de.rwth.i9.palm.model.Publication;
 
@@ -52,5 +53,21 @@ public interface PublicationDAO extends GenericDAO<Publication>, InstantiableDAO
 	 */
 	public Map<String, Object> getPublicationByEventWithPaging( Event event, int pageNo, int maxResult );
 	
+	/**
+	 * Get publications based on how many words can be between the various words
+	 * in the query phrase.
+	 * 
+	 * @param publicationTitle
+	 * @param slope
+	 * @return
+	 */
 	public List<Publication> getPublicationViaPhraseSlopQuery( String publicationTitle, int slope );
+
+	/**
+	 * Get publications given any number of authors (coauthors)
+	 * 
+	 * @param coauthors
+	 * @return
+	 */
+	public List<Publication> getPublicationByCoAuthors( Author... coauthors );
 }
