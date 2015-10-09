@@ -48,8 +48,6 @@ public interface PersistenceStrategy
 
 	public PublicationTopicDAO getPublicationTopicDAO();
 
-	public ReferenceDAO getReferenceDAO();
-
 	public RoleDAO getRoleDAO();
 
 	public SessionDataSetDAO getSessionDataSetDAO();
