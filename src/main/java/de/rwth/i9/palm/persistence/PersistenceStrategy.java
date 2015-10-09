@@ -18,8 +18,6 @@ public interface PersistenceStrategy
 
 	public EventGroupDAO getEventGroupDAO();
 
-	public DatasetDAO getDatasetDAO();
-
 	public ExtractionServiceDAO getExtractionServiceDAO();
 
 	public ExtractionServicePropertyDAO getExtractionServicePropertyDAO();
