@@ -18,8 +18,6 @@ public interface PersistenceStrategy
 
 	public EventGroupDAO getEventGroupDAO();
 
-	public DatasetDAO getDatasetDAO();
-
 	public ExtractionServiceDAO getExtractionServiceDAO();
 
 	public ExtractionServicePropertyDAO getExtractionServicePropertyDAO();
@@ -47,8 +45,6 @@ public interface PersistenceStrategy
 	public PublicationSourceDAO getPublicationSourceDAO();
 
 	public PublicationTopicDAO getPublicationTopicDAO();
-
-	public ReferenceDAO getReferenceDAO();
 
 	public RoleDAO getRoleDAO();
 
