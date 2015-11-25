@@ -72,4 +72,8 @@ public interface AuthorDAO extends GenericDAO<Author>, InstantiableDAO
 	public List<Author> getAuthorViaFuzzyQuery( String name, float threshold, int prefixLength );
 
 	public List<Author> getAuthorWithLikeQuery( String name );
+
+	List<Author> getAuthorListWithPaging( String queryString, int pageNo, int maxResult );
+
+	List<Author> getAuthorListByFullTextSearchWithPaging( String queryString, int page, int maxResult );
 }
