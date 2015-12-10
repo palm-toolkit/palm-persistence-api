@@ -51,9 +51,5 @@ public interface EventDAO extends GenericDAO<Event>, InstantiableDAO
 
 	public List<EventGroup> getEventViaFuzzyQuery( String name, float threshold, int prefixLength );
 
-	public EventGroup getEventGroupByEventNameOrNotation( String eventNameOrNotation );
-
 	public Event getEventByEventNameOrNotationAndYear( String eventNameOrNotation, String year );
-
-	public List<EventGroup> getEventGroupListWithPaging( String queryString, int pageNo, int maxResult );
 }
