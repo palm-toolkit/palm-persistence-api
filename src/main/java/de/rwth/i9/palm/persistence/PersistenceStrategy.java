@@ -14,9 +14,7 @@ public interface PersistenceStrategy
 
 	public AuthorSourceDAO getAuthorSourceDAO();
 
-	public CircleAuthorDAO getCircleAuthorDAO();
-
-	public CirclePublicationDAO getCirclePublicationDAO();
+	public CircleDAO getCircleDAO();
 
 	public CountryDAO getCountryDAO();
 
