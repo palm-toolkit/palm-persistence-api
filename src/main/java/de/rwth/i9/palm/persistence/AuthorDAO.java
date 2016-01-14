@@ -46,7 +46,7 @@ public interface AuthorDAO extends GenericDAO<Author>, InstantiableDAO
 	 * @param maxResult
 	 * @return
 	 */
-	public Map<String, Object> getAuthorWithPaging( String queryString, int pageNo, int maxResult );
+	public Map<String, Object> getAuthorWithPaging( String queryString, String addedAuthor, int pageNo, int maxResult );
 
 	/**
 	 * Apply fulltext search with hibernate search
@@ -65,7 +65,7 @@ public interface AuthorDAO extends GenericDAO<Author>, InstantiableDAO
 	 *         matching authors 
 	 *         Map< "result", List<Author> > - the author list
 	 */
-	public Map<String, Object> getAuthorByFullTextSearchWithPaging( String query, int page, int maxResult );
+	public Map<String, Object> getAuthorByFullTextSearchWithPaging( String query, String addedAuthor, int page, int maxResult );
 
 	public List<Author> getAuthorByNameAndInstitution( String name, String institution );
 
@@ -73,7 +73,7 @@ public interface AuthorDAO extends GenericDAO<Author>, InstantiableDAO
 
 	public List<Author> getAuthorWithLikeQuery( String name );
 
-	List<Author> getAuthorListWithPaging( String queryString, int pageNo, int maxResult );
+	public List<Author> getAuthorListWithPaging( String queryString, String addedAuthor, int pageNo, int maxResult );
 
-	List<Author> getAuthorListByFullTextSearchWithPaging( String queryString, int page, int maxResult );
+	public List<Author> getAuthorListByFullTextSearchWithPaging( String queryString, String addedAuthor, int page, int maxResult );
 }
