@@ -64,5 +64,7 @@ public interface PersistenceStrategy
 
 	public UserRequestDAO getUserRequestDAO();
 
+	public UserWidgetDAO getUserWidgetDAO();
+
 	public WidgetDAO getWidgetDAO();
 }
