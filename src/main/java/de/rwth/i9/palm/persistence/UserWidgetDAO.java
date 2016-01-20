@@ -4,11 +4,10 @@ import java.util.List;
 
 import de.rwth.i9.palm.model.User;
 import de.rwth.i9.palm.model.UserWidget;
-import de.rwth.i9.palm.model.Widget;
 import de.rwth.i9.palm.model.WidgetStatus;
 import de.rwth.i9.palm.model.WidgetType;
 
-public interface UserWidgetDAO extends GenericDAO<Widget>, InstantiableDAO
+public interface UserWidgetDAO extends GenericDAO<UserWidget>, InstantiableDAO
 {
 
 	/**
