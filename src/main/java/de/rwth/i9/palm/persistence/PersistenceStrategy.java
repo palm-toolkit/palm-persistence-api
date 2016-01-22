@@ -16,6 +16,10 @@ public interface PersistenceStrategy
 
 	public CircleDAO getCircleDAO();
 
+	public ConfigDAO getConfigDAO();
+
+	public ConfigPropertyDAO getConfigPropertyDAO();
+
 	public CountryDAO getCountryDAO();
 
 	public EventDAO getEventDAO();
@@ -37,8 +41,6 @@ public interface PersistenceStrategy
 	public InterestProfilePropertyDAO getInterestProfilePropertyDAO();
 
 	public LocationDAO getLocationDAO();
-
-	public PalmConfigurationDAO getPalmConfigurationDAO();
 
 	public PublicationDAO getPublicationDAO();
 
