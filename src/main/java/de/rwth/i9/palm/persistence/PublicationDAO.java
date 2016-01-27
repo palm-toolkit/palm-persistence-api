@@ -24,7 +24,7 @@ public interface PublicationDAO extends GenericDAO<Publication>, InstantiableDAO
 	 * @param orderBy
 	 * @return
 	 */
-	public Map<String, Object> getPublicationWithPaging( String query, String publicationType, Author author, Event event, int pageNo, int maxResult, String orderBy );
+	public Map<String, Object> getPublicationWithPaging( String query, String publicationType, Author author, Event event, Integer pageNo, Integer maxResult, String year, String orderBy );
 
 	/**
 	 * Apply fulltext search with Hibernate search
@@ -40,7 +40,7 @@ public interface PublicationDAO extends GenericDAO<Publication>, InstantiableDAO
 	 * @param orderBy
 	 * 
 	 */
-	public Map<String, Object> getPublicationByFullTextSearchWithPaging( String query, String publicationType, Author author, Event event, int page, int maxResult, String orderBy );
+	public Map<String, Object> getPublicationByFullTextSearchWithPaging( String query, String publicationType, Author author, Event event, Integer page, Integer maxResult, String year, String orderBy );
 
 	/**
 	 * Get all publication in pagination based on event
@@ -68,4 +68,7 @@ public interface PublicationDAO extends GenericDAO<Publication>, InstantiableDAO
 	 * @return
 	 */
 	public List<Publication> getPublicationByCoAuthors( Author... coauthors );
+
+	public List<String> getDistinctPublicationYearByAuthor( Author author );
+
 }
