@@ -7,6 +7,12 @@ import de.rwth.i9.palm.model.EventGroup;
 
 public interface EventGroupDAO extends GenericDAO<EventGroup>, InstantiableDAO
 {
+	/**
+	 * Trigger batch indexing using Hibernate search powered by Lucene
+	 * 
+	 * @throws InterruptedException
+	 */
+	public void doReindexing() throws InterruptedException;
 
 	public EventGroup getEventGroupByEventNameOrNotation( String eventNameOrNotation );
 
