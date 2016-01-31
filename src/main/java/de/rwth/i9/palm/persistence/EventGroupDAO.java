@@ -22,5 +22,5 @@ public interface EventGroupDAO extends GenericDAO<EventGroup>, InstantiableDAO
 
 	public List<EventGroup> getEventGroupListFullTextSearchWithPaging( String queryString, String type, int pageNo, int maxResult );
 
-	public Map<String, Object> getEventGroupMapFullTextSearchWithPaging( String queryString, String type, int pageNo, int maxResult );
+	public Map<String, Object> getEventGroupMapFullTextSearchWithPaging( String queryString, String notation, String type, int pageNo, int maxResult );
 }
