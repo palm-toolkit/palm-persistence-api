@@ -16,6 +16,12 @@ public interface PersistenceStrategy
 
 	public CircleDAO getCircleDAO();
 
+	public CircleInterestDAO getCircleInterestDAO();
+
+	public CircleInterestProfileDAO getCircleInterestProfileDAO();
+
+	public CircleWidgetDAO getCircleWidgetDAO();
+
 	public ConfigDAO getConfigDAO();
 
 	public ConfigPropertyDAO getConfigPropertyDAO();
