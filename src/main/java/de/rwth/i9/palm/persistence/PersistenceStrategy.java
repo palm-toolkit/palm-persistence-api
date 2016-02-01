@@ -14,11 +14,23 @@ public interface PersistenceStrategy
 
 	public AuthorSourceDAO getAuthorSourceDAO();
 
+	public CircleDAO getCircleDAO();
+
+	public CircleInterestDAO getCircleInterestDAO();
+
+	public CircleInterestProfileDAO getCircleInterestProfileDAO();
+
+	public CircleWidgetDAO getCircleWidgetDAO();
+
+	public ConfigDAO getConfigDAO();
+
+	public ConfigPropertyDAO getConfigPropertyDAO();
+
+	public CountryDAO getCountryDAO();
+
 	public EventDAO getEventDAO();
 
 	public EventGroupDAO getEventGroupDAO();
-
-	public DatasetDAO getDatasetDAO();
 
 	public ExtractionServiceDAO getExtractionServiceDAO();
 
@@ -36,8 +48,6 @@ public interface PersistenceStrategy
 
 	public LocationDAO getLocationDAO();
 
-	public PalmConfigurationDAO getPalmConfigurationDAO();
-
 	public PublicationDAO getPublicationDAO();
 
 	public PublicationFileDAO getPublicationFileDAO();
@@ -47,8 +57,6 @@ public interface PersistenceStrategy
 	public PublicationSourceDAO getPublicationSourceDAO();
 
 	public PublicationTopicDAO getPublicationTopicDAO();
-
-	public ReferenceDAO getReferenceDAO();
 
 	public RoleDAO getRoleDAO();
 
@@ -63,6 +71,8 @@ public interface PersistenceStrategy
 	public UserDAO getUserDAO();
 
 	public UserRequestDAO getUserRequestDAO();
+
+	public UserWidgetDAO getUserWidgetDAO();
 
 	public WidgetDAO getWidgetDAO();
 }

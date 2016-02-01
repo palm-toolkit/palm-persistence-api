@@ -23,4 +23,6 @@ public interface UserDAO extends GenericDAO<User>, InstantiableDAO
 	 * @param user
 	 */
 	public User touch( final User user );
+
+	public boolean isAuthorizedForRole( User user, String roleName );
 }
