@@ -42,6 +42,7 @@ public interface PublicationDAO extends GenericDAO<Publication>, InstantiableDAO
 	 */
 	public Map<String, Object> getPublicationByFullTextSearchWithPaging( String query, String publicationType, Author author, Event event, Integer page, Integer maxResult, String year, String orderBy );
 
+
 	/**
 	 * Get all publication in pagination based on event
 	 * 
@@ -49,7 +50,7 @@ public interface PublicationDAO extends GenericDAO<Publication>, InstantiableDAO
 	 * @param maxResult
 	 * @return
 	 */
-	public List<Publication> getPublicationByEventWithPaging( Event event, int pageNo, int maxResult );
+	public List<Publication> getPublicationByEventWithPaging( Event event, Integer pageNo, Integer maxResult );
 	
 	/**
 	 * Get publications based on how many words can be between the various words
