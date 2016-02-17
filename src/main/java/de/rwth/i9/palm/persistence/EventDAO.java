@@ -49,7 +49,23 @@ public interface EventDAO extends GenericDAO<Event>, InstantiableDAO
 	 */
 	public Map<String, Object> getEventByFullTextSearchWithPaging( String query, int page, int maxResult );
 
+	/**
+	 * Get List of event using Lucene Fuzzy Query given threshold and
+	 * prefixlength
+	 * 
+	 * @param name
+	 * @param threshold
+	 * @param prefixLength
+	 * @return
+	 */
 	public List<EventGroup> getEventViaFuzzyQuery( String name, float threshold, int prefixLength );
 
+	/**
+	 * Get event given event notation/name and year
+	 * 
+	 * @param eventNameOrNotation
+	 * @param year
+	 * @return
+	 */
 	public Event getEventByEventNameOrNotationAndYear( String eventNameOrNotation, String year );
 }
