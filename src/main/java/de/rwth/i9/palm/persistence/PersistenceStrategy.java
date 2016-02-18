@@ -14,6 +14,10 @@ public interface PersistenceStrategy
 
 	public AuthorSourceDAO getAuthorSourceDAO();
 
+	public AuthorTopicModelingDAO getAuthorTopicModelingDAO();
+
+	public AuthorTopicModelingProfileDAO getAuthorTopicModelingProfileDAO();
+
 	public CircleDAO getCircleDAO();
 
 	public CircleInterestDAO getCircleInterestDAO();
@@ -81,6 +85,8 @@ public interface PersistenceStrategy
 	public UserRequestDAO getUserRequestDAO();
 
 	public UserWidgetDAO getUserWidgetDAO();
+
+	public TopicModelingAlgorithmAuthorDAO getTopicModelingAlgorithmAuthorDAO();
 
 	public TopicModelingAlgorithmCircleDAO getTopicModelingAlgorithmCircleDAO();
 
