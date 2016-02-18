@@ -44,6 +44,8 @@ public interface PersistenceStrategy
 
 	public InterestProfileDAO getInterestProfileDAO();
 
+	public InterestProfileCircleDAO getInterestProfileCircleDAO();
+
 	public InterestProfilePropertyDAO getInterestProfilePropertyDAO();
 
 	public LocationDAO getLocationDAO();
