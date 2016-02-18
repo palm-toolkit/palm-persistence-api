@@ -20,6 +20,10 @@ public interface PersistenceStrategy
 
 	public CircleInterestProfileDAO getCircleInterestProfileDAO();
 
+	public CircleTopicModelingDAO getCircleTopicModelingDAO();
+
+	public CircleTopicModelingProfileDAO getCircleTopicModelingProfileDAO();
+
 	public CircleWidgetDAO getCircleWidgetDAO();
 
 	public ConfigDAO getConfigDAO();
@@ -77,6 +81,8 @@ public interface PersistenceStrategy
 	public UserRequestDAO getUserRequestDAO();
 
 	public UserWidgetDAO getUserWidgetDAO();
+
+	public TopicModelingAlgorithmCircleDAO getTopicModelingAlgorithmCircleDAO();
 
 	public WidgetDAO getWidgetDAO();
 }
