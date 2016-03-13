@@ -8,8 +8,17 @@ import de.rwth.i9.palm.model.WidgetType;
 
 public interface WidgetDAO extends GenericDAO<Widget>, InstantiableDAO
 {
+
 	/**
 	 * Get list of specific widgets by their type
+	 * 
+	 * @param widgetType
+	 * @return
+	 */
+	List<Widget> getWidgetByWidgetType( WidgetType widgetType );
+
+	/**
+	 * Get list of specific of active widgets by their type
 	 * 
 	 * @param widgetType
 	 * @return
