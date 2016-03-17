@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 import de.rwth.i9.palm.model.Author;
+import de.rwth.i9.palm.model.Circle;
 import de.rwth.i9.palm.model.Event;
 import de.rwth.i9.palm.model.Publication;
 
@@ -27,14 +28,6 @@ public interface PublicationDAO extends GenericDAO<Publication>, InstantiableDAO
 	public Map<String, Object> getPublicationWithPaging( String query, String publicationType, Author author, Event event, Integer pageNo, Integer maxResult, String year, String orderBy );
 
 	/**
-	 * Apply fulltext search with Hibernate search
-	 * 
-	 * @param queryString
-	 * @return list of all related publication
-	 */
-	public List<Publication> getPublicationByFullTextSearch( String queryString );
-	
-	/**
 	 * Apply fulltext search with Hibernate search with paging
 	 * 
 	 * @param orderBy
@@ -42,6 +35,23 @@ public interface PublicationDAO extends GenericDAO<Publication>, InstantiableDAO
 	 */
 	public Map<String, Object> getPublicationByFullTextSearchWithPaging( String query, String publicationType, Author author, Event event, Integer page, Integer maxResult, String year, String orderBy );
 
+	/**
+	 * Get all publication on Circle in pagination
+	 * 
+	 * @param pageNo
+	 * @param maxResult
+	 * @param orderBy
+	 * @return
+	 */
+	public Map<String, Object> getPublicationWithPaging( String query, String publicationType, Circle circle, Integer pageNo, Integer maxResult, String year, String orderBy );
+
+	/**
+	 * Apply fulltext search with Hibernate search
+	 * 
+	 * @param queryString
+	 * @return list of all related publication
+	 */
+	public List<Publication> getPublicationByFullTextSearch( String queryString );
 
 	/**
 	 * Get all publication in pagination based on event
@@ -70,6 +80,20 @@ public interface PublicationDAO extends GenericDAO<Publication>, InstantiableDAO
 	 */
 	public List<Publication> getPublicationByCoAuthors( Author... coauthors );
 
+	/**
+	 * Get list of years where publications exist on researcher
+	 * 
+	 * @param author
+	 * @return
+	 */
 	public List<String> getDistinctPublicationYearByAuthor( Author author );
+
+	/**
+	 * Get list of years where publications exist on circle
+	 * 
+	 * @param author
+	 * @return
+	 */
+	public List<String> getDistinctPublicationYearByCircle( Circle circle );
 
 }
