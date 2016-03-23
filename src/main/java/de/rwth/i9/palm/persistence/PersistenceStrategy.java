@@ -82,6 +82,8 @@ public interface PersistenceStrategy
 
 	public UserDAO getUserDAO();
 
+	public UserPublicationBookmarkDAO getUserPublicationBookmarkDAO();
+
 	public UserRequestDAO getUserRequestDAO();
 
 	public UserWidgetDAO getUserWidgetDAO();
