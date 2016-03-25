@@ -80,7 +80,15 @@ public interface PersistenceStrategy
 
 	public SubjectDAO getSubjectDAO();
 
+	public UserAuthorBookmarkDAO getUserAuthorBookmarkDAO();
+
 	public UserDAO getUserDAO();
+
+	public UserCircleBookmarkDAO getUserCircleBookmarkDAO();
+
+	public UserEventGroupBookmarkDAO getUserEventGroupBookmarkDAO();
+
+	public UserPublicationBookmarkDAO getUserPublicationBookmarkDAO();
 
 	public UserRequestDAO getUserRequestDAO();
 

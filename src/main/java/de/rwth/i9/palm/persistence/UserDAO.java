@@ -1,5 +1,7 @@
 package de.rwth.i9.palm.persistence;
 
+import java.util.List;
+
 import de.rwth.i9.palm.model.User;
 
 public interface UserDAO extends GenericDAO<User>, InstantiableDAO
@@ -18,6 +20,14 @@ public interface UserDAO extends GenericDAO<User>, InstantiableDAO
 	 * @return
 	 */
 	public User getByUsername( final String username );
+
+	/**
+	 * Get user object by name
+	 * 
+	 * @param username
+	 * @return
+	 */
+	public List<User> getByName( final String name );
 
 	/**
 	 * @param user
