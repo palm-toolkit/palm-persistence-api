@@ -53,4 +53,12 @@ public interface WidgetDAO extends GenericDAO<Widget>, InstantiableDAO
 	 * @return
 	 */
 	List<Widget> getWidget( WidgetType widgetType, String widgetGroup, WidgetStatus... widgetStatuses );
+
+	/**
+	 * Get widget by unique name
+	 * 
+	 * @param uniqueWidgetName
+	 * @return
+	 */
+	public Widget getByUniqueName( String uniqueWidgetName );
 }
