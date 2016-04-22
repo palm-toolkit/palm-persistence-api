@@ -38,6 +38,10 @@ public interface PersistenceStrategy
 
 	public EventDAO getEventDAO();
 
+	public EventInterestDAO getEventInterestDAO();
+
+	public EventInterestProfileDAO getEventInterestProfileDAO();
+
 	public EventGroupDAO getEventGroupDAO();
 
 	public ExtractionServiceDAO getExtractionServiceDAO();
@@ -53,6 +57,8 @@ public interface PersistenceStrategy
 	public InterestProfileDAO getInterestProfileDAO();
 
 	public InterestProfileCircleDAO getInterestProfileCircleDAO();
+
+	public InterestProfileEventDAO getInterestProfileEventDAO();
 
 	public InterestProfilePropertyDAO getInterestProfilePropertyDAO();
 

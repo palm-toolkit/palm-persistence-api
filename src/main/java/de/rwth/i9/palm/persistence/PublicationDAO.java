@@ -86,7 +86,7 @@ public interface PublicationDAO extends GenericDAO<Publication>, InstantiableDAO
 	 * @param author
 	 * @return
 	 */
-	public List<String> getDistinctPublicationYearByAuthor( Author author );
+	public List<String> getDistinctPublicationYearByAuthor( Author author, String orderBy );
 
 	/**
 	 * Get list of years where publications exist on circle
