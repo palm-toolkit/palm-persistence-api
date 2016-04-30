@@ -29,9 +29,10 @@ public interface EventGroupDAO extends GenericDAO<EventGroup>, InstantiableDAO
 	 * @param type
 	 * @param pageNo
 	 * @param maxResult
+	 * @param addedVenue
 	 * @return
 	 */
-	public List<EventGroup> getEventGroupListWithPaging( String queryString, String type, int pageNo, int maxResult );
+	public List<EventGroup> getEventGroupListWithPaging( String queryString, String type, int pageNo, int maxResult, String addedVenue );
 
 	/**
 	 * Get event group as map based on given parameters
@@ -42,7 +43,7 @@ public interface EventGroupDAO extends GenericDAO<EventGroup>, InstantiableDAO
 	 * @param maxResult
 	 * @return
 	 */
-	public Map<String, Object> getEventGroupMapWithPaging( String queryString, String type, int pageNo, int maxResult );
+	public Map<String, Object> getEventGroupMapWithPaging( String queryString, String type, int pageNo, int maxResult, String addedVenue );
 
 	/**
 	 * Get event group as list based on given parameters, with full text search
@@ -53,7 +54,7 @@ public interface EventGroupDAO extends GenericDAO<EventGroup>, InstantiableDAO
 	 * @param maxResult
 	 * @return
 	 */
-	public List<EventGroup> getEventGroupListFullTextSearchWithPaging( String queryString, String type, int pageNo, int maxResult );
+	public List<EventGroup> getEventGroupListFullTextSearchWithPaging( String queryString, String type, int pageNo, int maxResult, String addedVenue );
 
 	/**
 	 * Get event group as map based on given parameters, with full text search
@@ -63,9 +64,10 @@ public interface EventGroupDAO extends GenericDAO<EventGroup>, InstantiableDAO
 	 * @param type
 	 * @param pageNo
 	 * @param maxResult
+	 * @param addedVenue
 	 * @return
 	 */
-	public Map<String, Object> getEventGroupMapFullTextSearchWithPaging( String queryString, String notation, String type, int pageNo, int maxResult );
+	public Map<String, Object> getEventGroupMapFullTextSearchWithPaging( String queryString, String notation, String type, int pageNo, int maxResult, String addedVenue );
 
 	/**
 	 * Get similar eventGroup, given EventGroup to be compared
