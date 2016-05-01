@@ -91,9 +91,11 @@ public interface PublicationDAO extends GenericDAO<Publication>, InstantiableDAO
 	/**
 	 * Get list of years where publications exist on circle
 	 * 
+	 * @param string
+	 * 
 	 * @param author
 	 * @return
 	 */
-	public List<String> getDistinctPublicationYearByCircle( Circle circle );
+	public List<String> getDistinctPublicationYearByCircle( Circle circle, String string );
 
 }
