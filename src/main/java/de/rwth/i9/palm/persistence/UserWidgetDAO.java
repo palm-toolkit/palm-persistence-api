@@ -30,4 +30,14 @@ public interface UserWidgetDAO extends GenericDAO<UserWidget>, InstantiableDAO
 	 * @return
 	 */
 	List<UserWidget> getWidget( User user, WidgetType widgetType, String widgetGroup, WidgetStatus... widgetStatuses );
+
+	/**
+	 * Get list of specific widgets by their type, group and status (DEFAULT,
+	 * ACTIVE, etc)
+	 * 
+	 * @param widgetType
+	 * @param widgetStatus
+	 * @return
+	 */
+	List<UserWidget> getWidgetByColor( User user, WidgetType widgetType, WidgetStatus widgetStatus );
 }
