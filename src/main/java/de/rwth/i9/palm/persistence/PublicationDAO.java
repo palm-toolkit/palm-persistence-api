@@ -63,6 +63,15 @@ public interface PublicationDAO extends GenericDAO<Publication>, InstantiableDAO
 	public List<Publication> getPublicationByEventWithPaging( Event event, Integer pageNo, Integer maxResult );
 	
 	/**
+	 * Get all publications related to the given eventId
+	 * 
+	 * @param eventId
+	 * @return
+	 */
+	public List<Publication> getPublicationByEventId( String eventId );
+
+
+	/**
 	 * Get publications based on how many words can be between the various words
 	 * in the query phrase.
 	 * 
@@ -81,6 +90,14 @@ public interface PublicationDAO extends GenericDAO<Publication>, InstantiableDAO
 	public List<Publication> getPublicationByCoAuthors( Author... coauthors );
 
 	/**
+	 * Get publications given the author's ID
+	 * 
+	 * @param coauthors
+	 * @return
+	 */
+	public List<Publication> getPublicationByAuthorId( String authorId );
+
+	/**
 	 * Get list of years where publications exist on researcher
 	 * 
 	 * @param author
@@ -97,5 +114,6 @@ public interface PublicationDAO extends GenericDAO<Publication>, InstantiableDAO
 	 * @return
 	 */
 	public List<String> getDistinctPublicationYearByCircle( Circle circle, String string );
+
 
 }

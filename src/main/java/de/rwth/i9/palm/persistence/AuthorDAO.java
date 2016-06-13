@@ -76,4 +76,20 @@ public interface AuthorDAO extends GenericDAO<Author>, InstantiableDAO
 	public List<Author> getAuthorListWithPaging( String queryString, String addedAuthor, int pageNo, int maxResult );
 
 	public List<Author> getAuthorListByFullTextSearchWithPaging( String queryString, String addedAuthor, int page, int maxResult );
+
+	/**
+	 * Get all authors with full data sets
+	 * 
+	 * @param conferenceId
+	 * @return
+	 */
+	public List<Author> getAdded();
+
+	/**
+	 * Get all authors related to the given conferenceId
+	 * 
+	 * @param conferenceId
+	 * @return
+	 */
+	public List<Author> getAuthorByEventId( String eventId );
 }
