@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 import de.rwth.i9.palm.model.Author;
+import de.rwth.i9.palm.model.DataMiningAuthor;
 
 public interface AuthorDAO extends GenericDAO<Author>, InstantiableDAO
 {
@@ -85,11 +86,11 @@ public interface AuthorDAO extends GenericDAO<Author>, InstantiableDAO
 	 */
 	public List<Author> getAdded();
 
-	/**
-	 * Get all authors related to the given conferenceId
-	 * 
-	 * @param conferenceId
-	 * @return
-	 */
-	public List<Author> getAuthorByEventId( String eventId );
+	public List<DataMiningAuthor> getDataMiningObjects();
+
+	public List<DataMiningAuthor> getDataMiningObjectsByCircle( String... circleIds );
+
+	public List<DataMiningAuthor> getDataMiningObjectsByEvent( String... eventIds );
+
+	public List<DataMiningAuthor> getDataMiningObjectsByPublication( String... eventIds );
 }

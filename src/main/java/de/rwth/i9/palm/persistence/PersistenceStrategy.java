@@ -10,6 +10,8 @@ public interface PersistenceStrategy
 
 	public AuthorInterestDAO getAuthorInterestDAO();
 
+	public AuthorInterestFlatDAO getAuthorInterestFlatDAO();
+
 	public AuthorInterestProfileDAO getAuthorInterestProfileDAO();
 
 	public AuthorSourceDAO getAuthorSourceDAO();
@@ -75,6 +77,8 @@ public interface PersistenceStrategy
 	public PublicationSourceDAO getPublicationSourceDAO();
 
 	public PublicationTopicDAO getPublicationTopicDAO();
+
+	public PublicationTopicFlatDAO getPublicationTopicFlatDAO();
 
 	public RoleDAO getRoleDAO();
 
