@@ -92,4 +92,12 @@ public interface AuthorDAO extends GenericDAO<Author>, InstantiableDAO
 	 * @return
 	 */
 	public List<Author> getAuthorByEventId( String eventId );
+
+	/**
+	 * Get all authors related to the given conferenceId
+	 * 
+	 * @param conferenceId
+	 * @return
+	 */
+	public List<Author> getAuthorByEventNotAdded( String eventId );
 }
