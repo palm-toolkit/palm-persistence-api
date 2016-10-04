@@ -44,6 +44,16 @@ public interface WidgetDAO extends GenericDAO<Widget>, InstantiableDAO
 	List<Widget> getWidget( WidgetType widgetType, WidgetStatus... widgetStatuses );
 
 	/**
+	 * Get list of specific widgets by their type and status (DEFAULT, ACTIVE,
+	 * etc)
+	 * 
+	 * @param widgetType
+	 * @param widgetStatuses
+	 * @return
+	 */
+	List<Widget> getWidgetByColor( WidgetType widgetType, WidgetStatus... widgetStatuses );
+
+	/**
 	 * Get list of specific widgets by their type, group and status (DEFAULT,
 	 * ACTIVE, etc)
 	 * 

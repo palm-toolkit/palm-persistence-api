@@ -27,6 +27,8 @@ public interface PublicationDAO extends GenericDAO<Publication>, InstantiableDAO
 	 */
 	public Map<String, Object> getPublicationWithPaging( String query, String publicationType, Author author, Event event, Integer pageNo, Integer maxResult, String year, String orderBy );
 
+	public Map<String, Object> getPublicationWithoutPaging( String query, String publicationType, Author author, Event event, String year, String orderBy );
+
 	/**
 	 * Apply fulltext search with Hibernate search with paging
 	 * 
@@ -34,6 +36,8 @@ public interface PublicationDAO extends GenericDAO<Publication>, InstantiableDAO
 	 * 
 	 */
 	public Map<String, Object> getPublicationByFullTextSearchWithPaging( String query, String publicationType, Author author, Event event, Integer page, Integer maxResult, String year, String orderBy );
+
+	public Map<String, Object> getPublicationByFullTextSearchWithoutPaging( String query, String publicationType, Author author, Event event, String year, String orderBy );
 
 	/**
 	 * Get all publication on Circle in pagination

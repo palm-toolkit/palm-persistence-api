@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 import de.rwth.i9.palm.model.Author;
+import de.rwth.i9.palm.model.DataMiningAuthor;
 
 public interface AuthorDAO extends GenericDAO<Author>, InstantiableDAO
 {
@@ -78,26 +79,22 @@ public interface AuthorDAO extends GenericDAO<Author>, InstantiableDAO
 	public List<Author> getAuthorListByFullTextSearchWithPaging( String queryString, String addedAuthor, int page, int maxResult );
 
 	/**
-	 * Get all authors with full data sets
+	 * Get all author in pagination
 	 * 
-	 * @param conferenceId
+	 * @param pageNo
+	 * @param maxResult
 	 * @return
 	 */
-	public List<Author> getAdded();
+	public Map<String, Object> getAuthorWithoutPaging( String queryString, String addedAuthor );
 
 	/**
-	 * Get all authors related to the given conferenceId
+	 * Get list of all authors
 	 * 
-	 * @param conferenceId
+	 * @param lastName
 	 * @return
 	 */
-	public List<Author> getAuthorByEventId( String eventId );
+	public List<Author> getAllAuthors();
 
-	/**
-	 * Get all authors related to the given conferenceId
-	 * 
-	 * @param conferenceId
-	 * @return
-	 */
-	public List<Author> getAuthorByEventNotAdded( String eventId );
+	public List<DataMiningAuthor> getDataMiningObjects();
+
 }

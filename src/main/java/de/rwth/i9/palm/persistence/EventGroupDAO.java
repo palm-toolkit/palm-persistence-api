@@ -3,6 +3,7 @@ package de.rwth.i9.palm.persistence;
 import java.util.List;
 import java.util.Map;
 
+import de.rwth.i9.palm.model.DataMiningEventGroup;
 import de.rwth.i9.palm.model.EventGroup;
 
 public interface EventGroupDAO extends GenericDAO<EventGroup>, InstantiableDAO
@@ -35,6 +36,18 @@ public interface EventGroupDAO extends GenericDAO<EventGroup>, InstantiableDAO
 	public List<EventGroup> getEventGroupListWithPaging( String queryString, String type, int pageNo, int maxResult, String addedVenue );
 
 	/**
+	 * Get event group as list based on given parameters
+	 * 
+	 * @param queryString
+	 * @param type
+	 * @param pageNo
+	 * @param maxResult
+	 * @param addedVenue
+	 * @return
+	 */
+	public List<EventGroup> getEventGroupListWithoutPaging( String queryString, String type, String addedVenue );
+
+	/**
 	 * Get event group as map based on given parameters
 	 * 
 	 * @param queryString
@@ -44,6 +57,15 @@ public interface EventGroupDAO extends GenericDAO<EventGroup>, InstantiableDAO
 	 * @return
 	 */
 	public Map<String, Object> getEventGroupMapWithPaging( String queryString, String type, int pageNo, int maxResult, String addedVenue );
+
+	/**
+	 * Get event group as map based on given parameters
+	 * 
+	 * @param queryString
+	 * @param type
+	 * @return
+	 */
+	public Map<String, Object> getEventGroupMapWithoutPaging( String queryString, String type, String addedVenue );
 
 	/**
 	 * Get event group as list based on given parameters, with full text search
@@ -70,10 +92,23 @@ public interface EventGroupDAO extends GenericDAO<EventGroup>, InstantiableDAO
 	public Map<String, Object> getEventGroupMapFullTextSearchWithPaging( String queryString, String notation, String type, int pageNo, int maxResult, String addedVenue );
 
 	/**
+	 * Get event group as map based on given parameters, with full text search
+	 * 
+	 * @param queryString
+	 * @param notation
+	 * @param type
+	 * @param addedVenue
+	 * @return
+	 */
+	public Map<String, Object> getEventGroupMapFullTextSearchWithoutPaging( String queryString, String notation, String type, String addedVenue );
+
+	/**
 	 * Get similar eventGroup, given EventGroup to be compared
 	 * 
 	 * @param evemntGroupCompareTo
 	 * @return
 	 */
 	public EventGroup getSimilarEventGroup( EventGroup eventGroupCompareTo );
+
+	public List<DataMiningEventGroup> getDataMiningObjects();
 }
