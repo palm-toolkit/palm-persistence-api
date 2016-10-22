@@ -5,6 +5,7 @@ import java.util.Map;
 
 import de.rwth.i9.palm.model.Author;
 import de.rwth.i9.palm.model.Circle;
+import de.rwth.i9.palm.model.DataMiningPublication;
 import de.rwth.i9.palm.model.Event;
 import de.rwth.i9.palm.model.Publication;
 
@@ -119,5 +120,6 @@ public interface PublicationDAO extends GenericDAO<Publication>, InstantiableDAO
 	 */
 	public List<String> getDistinctPublicationYearByCircle( Circle circle, String string );
 
+	public List<DataMiningPublication> getDataMiningObjects();
 
 }

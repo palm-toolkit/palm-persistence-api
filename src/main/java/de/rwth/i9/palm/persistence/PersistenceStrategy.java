@@ -80,6 +80,8 @@ public interface PersistenceStrategy
 
 	public PublicationTopicDAO getPublicationTopicDAO();
 
+	public PublicationTopicFlatDAO getPublicationTopicFlatDAO();
+
 	public RoleDAO getRoleDAO();
 
 	public SessionDataSetDAO getSessionDataSetDAO();
