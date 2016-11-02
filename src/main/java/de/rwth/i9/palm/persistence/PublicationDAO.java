@@ -122,4 +122,8 @@ public interface PublicationDAO extends GenericDAO<Publication>, InstantiableDAO
 
 	public List<DataMiningPublication> getDataMiningObjects();
 
+	public List<Publication> getAllPublications();
+
+	public List<Publication> getPublicationByTitle( List<String> titles );
+
 }
