@@ -124,6 +124,6 @@ public interface PublicationDAO extends GenericDAO<Publication>, InstantiableDAO
 
 	public List<Publication> getAllPublications();
 
-	public List<Publication> getPublicationByTitle( List<String> titles );
+	public List<Publication> getPublicationByIds( List<String> ids );
 
 }
