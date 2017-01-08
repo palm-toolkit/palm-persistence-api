@@ -89,6 +89,8 @@ public interface AuthorDAO extends GenericDAO<Author>, InstantiableDAO
 
 	public Map<String, Object> getAuthorWithPagingOrderByName( String queryString, String addedAuthor, int pageNo, int maxResult );
 
+	public List<Author> getAllAuthors();
+	
 	public List<DataMiningAuthor> getDataMiningObjects();
 
 }
