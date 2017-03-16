@@ -98,4 +98,6 @@ public interface PublicationDAO extends GenericDAO<Publication>, InstantiableDAO
 	 */
 	public List<String> getDistinctPublicationYearByCircle( Circle circle, String string );
 
+	public Map<String, Object> getPublicationWithPaging( String query, String publicationType, Circle targetCircle, Author memberCircle, Integer startPage, Integer maxresult, String year, String orderBy );
+
 }
