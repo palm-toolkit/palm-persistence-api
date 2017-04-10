@@ -68,4 +68,6 @@ public interface EventDAO extends GenericDAO<Event>, InstantiableDAO
 	 * @return
 	 */
 	public Event getEventByEventNameOrNotationAndYear( String eventNameOrNotation, String year );
+
+	public Map<String, Object> getParticipantsEvent( String query, Event event, Integer pageNo, Integer maxResult, String orderBy );
 }
