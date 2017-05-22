@@ -37,4 +37,6 @@ public interface CircleDAO extends GenericDAO<Circle>, InstantiableDAO
 	 * @return
 	 */
 	public Map<String, Object> getCircleFullTextSearchWithPaging( String query, User creator, int pageNo, int maxResult, String orderBy );
+
+	public Map<String, Object> getCircleMembersByPublishingPeriod( Circle circle, Integer yearMin, Integer yearMax, int maxResult );
 }
